@@ -1,0 +1,159 @@
+/* ========== Fondo, Fuente y Espaciado Global ========== */
+body {
+  background: url("../images/Artificial Intelligence AI Stock Footage.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ========== Encabezados ========== */
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #f05cf7;
+  margin-bottom: 20px;
+}
+
+/* ========== Contenedores de contenido (Cajas) ========== */
+/* ========== Contenedores de contenido (Cajas) ========== */
+.content-box {
+  background-color: rgba(46, 32, 92, 0.3); /* Fondo más transparente */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
+p {
+  color: #e4c8fc;
+  line-height: 1.6;
+}
+
+/* ========== Menú de navegación (Encabezado) ========== */
+#menu {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra opcional para resaltar */
+}
+ 
+
+#menu ul {
+  list-style: none;
+}
+
+#menu li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu a:hover {
+  color: #f05cf7;
+}
+
+
+/* ========== Contenido Principal ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenido {
+  flex: 1;
+}
+
+/* ========== Footer (Pie de página) ========== */
+footer {
+  background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5); /* Sombra opcional para resaltar */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-section p {
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
+}
+
+/* ========== Botón de WhatsApp flotante ========== */
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+/* Personalización de tarjetas Bootstrap */
+.card {
+  background-color: rgba(46, 32, 92, 0.3); /* Fondo transparente */
+  border: none;
+  color: #e4c8fc;
+}
+
+.card-title {
+  color: #f05cf7;
+}
+
+.enlaces-rapidos a {
+  color: #e4c8fc; /* Cambia a cualquier color que prefieras */
+}
+
+.enlaces-rapidos a:hover {
+  color: white; /* Cambia el color al pasar el mouse por encima */
+}
+

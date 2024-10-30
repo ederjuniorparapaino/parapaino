@@ -1,0 +1,96 @@
+/* Estilo general del fondo */
+body {
+  background: url("../images/Artificial Intelligence AI Stock Footage.gif")
+    no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+/* Estilo para las tarjetas de servicios */
+.card {
+  background: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+  color: white;
+  border: none;
+}
+
+.card .card-title {
+  color: #f05cf7;
+}
+
+.card .btn-primary {
+  background-color: #f05cf7;
+  border: none;
+}
+
+.card .btn-primary:hover {
+  background-color: #c04bb2;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5); /* Sombra opcional para resaltar */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-section p {
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0); /* Fondo completamente transparente */
+}
+
+.bg-secondary {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.bg-secondary p {
+  color: #ffffff;
+}

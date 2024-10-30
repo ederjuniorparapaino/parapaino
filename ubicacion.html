@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Ubicación</title>
+    <style>
+        /* Estilos para el mapa */
+        #map {
+            height: 400px; /* Altura del mapa */
+            width: 100%; /* Ancho del mapa */
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+    <script>
+        let map;
+        let marker;
+
+        function initMap() {
+            // Inicializar el mapa centrado en una ubicación específica
+            const initialLocation = { lat: -17.7790, lng: -63.1810 }; // Cambia estas coordenadas por las de tu negocio
+            map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: initialLocation,
+            });
+
+            // Agregar un marcador en la ubicación inicial
+            marker = new google.maps.Marker({
+                position: initialLocation,
+                map: map,
+                draggable: true, // Hacer el marcador arrastrable
+            });
+
+            // Evento para actualizar la posición del marcador
+            google.maps.event.addListener(marker, 'dragend', function(event) {
+                const lat = event.latLng.lat();
+                const lng = event.latLng.lng();
+                document.getElementById("location").value = `${lat}, ${lng}`; // Mostrar las coordenadas
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Selecciona la Ubicación de tu Negocio</h1>
+    <div id="map"></div>
+    <input type="text" id="location" placeholder="Coordenadas" readonly>
+</body>
+</html>
